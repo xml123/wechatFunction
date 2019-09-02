@@ -1,5 +1,7 @@
 # wechat public number function
 
+## demo http://wechat.brightness.xin/get_img
+
 ## Installation dependency
 
 ```sh
