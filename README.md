@@ -1,4 +1,4 @@
-# wechat public function
+# wechat public number function
 
 ## Installation dependency
 
