@@ -43,7 +43,7 @@ server.get('/get_open_id',function(request, response){
         client.getUser(openid, function (err, result2) {
             userInfo = result2
             console.log('userInfo',userInfo)
-	    response.send(userInfo)
+	        response.send(userInfo)
         })
     })
 //    response.send(userInfo)

@@ -34,7 +34,7 @@ function UrlSearch(url){
 
 server.get('/get_img',function(request, response){
     const client = new OAuth('wx94864d8a37bde769', 'd6b1fa96c1c0b2f931aa5edfdec4d793')
-    const redirectUrl = 'http://47.75.210.155:4040/get_open_id'
+    const redirectUrl = 'http://wechat.brightness.xin/get_open_id'
     //const uuidv1 = require('uuid/v1');
     const url = client.getAuthorizeURL(redirectUrl, '123123123', 'snsapi_userinfo')
 
@@ -50,11 +50,12 @@ server.get('/get_open_id',function(request, response){
         var accessToken = result.data.access_token;
         var openid = result.data.openid;
         client.getUser(openid, function (err, result2) {
-            var userInfo = result2
+            userInfo = result2
             console.log('userInfo',userInfo)
+	        response.send(userInfo)
         })
     })
-    response.send(userInfo)
+//    response.send(userInfo)
 })
 server.listen(4040)
   
