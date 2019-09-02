@@ -54,7 +54,7 @@ server.get('/get_open_id',function(request, response){
             console.log('userInfo',userInfo)
         })
     })
-    response.send(code)
+    response.send(userInfo)
 })
 server.listen(4040)
   
