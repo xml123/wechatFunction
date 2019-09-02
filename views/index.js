@@ -25,7 +25,7 @@ function UrlSearch(url){
 
 server.get('/get_img',function(request, response){
     const client = new OAuth('wx94864d8a37bde769', 'd6b1fa96c1c0b2f931aa5edfdec4d793')
-    const redirectUrl = 'http://192.168.1.100:4040/get_open_id'
+    const redirectUrl = 'http://47.75.210.155:4040/get_open_id'
     //const uuidv1 = require('uuid/v1');
     const url = client.getAuthorizeURL(redirectUrl, '123123123', 'snsapi_userinfo')
 
